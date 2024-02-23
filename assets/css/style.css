@@ -1,0 +1,151 @@
+/* DM Sans Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+@font-face {
+    font-family: Kelsi;
+    src: url('assets/fonts/Kelsi-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: Kelsi-fill;
+    src: url('assets/fonts/Kelsi-fill.otf') format('opentype');
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 100vw;
+    min-height: 100vh;
+
+    font-family: DM Sans;
+    padding-top: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center ;
+
+    position: sticky;
+    top: 0;
+
+    width: 100vw;
+    padding: 1.2% 0 1% 0;
+    
+    background-color: #F1FAFF;
+}
+
+nav > a {
+    font-size: 22.5px;
+    color: #202020;
+    padding: 10px 25px 10px 25px;
+    margin: 0px 2.5px 0px 2.5px;
+    border-radius: 50px;
+}
+
+nav > a:hover {
+    outline: black solid 3px;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+
+#external-link {
+    width: 17.5px;
+    padding-left: 2px;
+}
+
+#intro-box {
+    width: 100%;
+    height: 92vh;
+    background-color: #F1FAFF;
+}
+
+#intro-box > * {
+    margin: 0;
+    padding: 0 0 0 11%;
+}
+
+#hello {
+    font-size: 125px;
+    padding-top: 7.5%;
+}
+
+#david {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+
+    font-family: Kelsi;
+    font-size: 130px;
+}
+
+#david > h1 {
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s cubic-bezier(.08,-0.01,.23,.99);
+}
+
+#david > h1:hover {
+    color: #053bfc;
+    transform: scale(1.2) rotate(-0.1turn);
+}
+
+#david > div {
+    margin: 0;
+    padding: 40px;
+}
+
+h3 {
+    /* TEMPORARY: to make space on the bottom for now */
+    padding-bottom: 1000px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 5% 3.5% 3.5% 3.5%;
+    height: 86vh;
+}
+
+h2 {
+    font-size: 75px;
+    margin-bottom: 2%;
+}
+
+p {
+    max-width: 70vw;
+}
+
+#music-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    width: 400px;
+    padding: 25px 15px 25px 15px;
+    border-radius: 15px;
+    outline: gray solid 2px;
+}
+
+#music-box > img {
+    width: 100px;
+}
