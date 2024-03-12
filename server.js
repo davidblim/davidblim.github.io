@@ -1,16 +1,19 @@
 const express = require('express');
-const port = 3000;
+var path = require('path');
+const port = 8000;
 
 const app = express();
 
 app.get('/', (req, res) => {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/public/index.html');
 });
 
-app.get('/style.css', (req, res) => {
-    res.sendFile(__dirname + '/assets/css/style.css');
+app.get('/styles.css', (req, res) => {
+    res.sendFile(__dirname + '/public/css/styles.css');
 });
 
 app.listen(port, () => {
   console.log(`Example app listening at http://localhost:${port}`);
 });
+
+app.use(express.static(path.join(__dirname, 'public')));
