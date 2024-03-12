@@ -1,14 +1,14 @@
 /* DM Sans Google Font */
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Rubik+Mono+One&family=VT323&display=swap');
 
 @font-face {
     font-family: Kelsi;
-    src: url('assets/fonts/Kelsi-Regular.otf') format('opentype');
+    src: url('assets/fonts/Kelsi-Regular.otf') format('otf');
 }
 
 @font-face {
     font-family: Kelsi-fill;
-    src: url('assets/fonts/Kelsi-fill.otf') format('opentype');
+    src: url('assets/fonts/Kelsi-fill.otf') format('otf');
 }
 
 html, body {
@@ -92,20 +92,22 @@ nav > a:hover {
     margin: 0;
     padding: 0;
 
-    font-family: Kelsi;
+    font-family: Kelsi, DM Sans;
     font-size: 130px;
 }
 
 #david > h1 {
     margin: 0;
     padding: 0;
-    transition: all 0.3s cubic-bezier(.08,-0.01,.23,.99);
+    
 }
 
+/*
 #david > h1:hover {
     color: #053bfc;
-    transform: scale(1.2) rotate(-0.1turn);
+    
 }
+*/
 
 #david > div {
     margin: 0;
